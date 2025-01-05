@@ -75,56 +75,66 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    justifyContent: 'center', // added this
   },
   logoContainer: {
     alignItems: 'center',
-    marginTop: 60,
-    marginBottom: 20,
+    marginTop: 60,  // reduced from 80
+    marginBottom: 32, // changed this
   },
   logo: {
-    width: width * 0.5,
-    height: width * 0.5,
+    width: width * 0.4,
+    height: width * 0.4,
   },
   formContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    gap: 16,
+    paddingHorizontal: 20, // added this
+    gap: 10, // added this
   },
   title: {
     fontSize: 32,
     marginBottom: 30,
     textAlign: 'center',
+    fontFamily: 'Poppins-Regular',
   },
   input: {
-    height: 55,
-    borderWidth: 1,
+    height: 60,
+    borderWidth: 1.5,
     padding: 15,
-    borderRadius: 12,
-    borderColor: '#ccc',
+    borderRadius: 16,
+    borderColor: '#e1e1e1',
     fontSize: 16,
-  },
-  button: {
-    backgroundColor: '#007AFF',
-    padding: 16,
-    borderRadius: 12,
-    marginTop: 10,
+    fontFamily: 'Poppins-Regular',
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.05,
     shadowRadius: 3.84,
-    elevation: 5,
+    elevation: 2,
+  },
+  button: {
+    backgroundColor: '#007AFF',
+    padding: 18,
+    borderRadius: 16,
+    marginTop: 16,
+    shadowColor: "#007AFF",
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+    elevation: 8,
   },
   buttonText: {
     color: 'white',
     textAlign: 'center',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Medium',
   },
   link: {
-    marginTop: 20,
+    marginTop: 24,
     alignSelf: 'center',
   },
 });
