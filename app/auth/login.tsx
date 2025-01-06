@@ -12,7 +12,6 @@ export default function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const colorScheme = useColorScheme();
-
   return (
     <ThemedView style={styles.container}>
       <Animated.View entering={FadeInDown.duration(1000).springify()} style={styles.logoContainer}>
@@ -27,9 +26,11 @@ export default function LoginScreen() {
         entering={FadeInDown.duration(1000).springify().delay(200)}
         style={styles.formContainer}>
         <ThemedText type="title" style={styles.title}>
-          Welcome Back
+          Welcome to
         </ThemedText>
-
+        <ThemedText type="title" style={styles.devduo}>
+          DevDuo
+        </ThemedText>
         <TextInput
           style={[
             styles.input,
@@ -80,11 +81,11 @@ const styles = StyleSheet.create({
   logoContainer: {
     alignItems: 'center',
     marginTop: 60,  // reduced from 80
-    marginBottom: 32, // changed this
+    marginBottom: 12, // changed this
   },
   logo: {
-    width: width * 0.4,
-    height: width * 0.4,
+    width: width * 0.7,
+    height: width * 0.7,
   },
   formContainer: {
     paddingHorizontal: 20, // added this
@@ -94,7 +95,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     marginBottom: 30,
     textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-SemiBold', // changed from Poppins-Regular to Poppins-SemiBold
   },
   input: {
     height: 60,
@@ -137,4 +138,19 @@ const styles = StyleSheet.create({
     marginTop: 24,
     alignSelf: 'center',
   },
+  devduo: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 32,
+    marginBottom: 30,
+    textAlign: 'center',
+    color: '#007AFF',
+    textShadowColor: '#02264d',
+    textShadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    textShadowRadius: 5,
+    marginTop: -20,
+    letterSpacing: 1.5,
+},
 });

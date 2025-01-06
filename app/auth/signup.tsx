@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     marginBottom: 30,
     textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-SemiBold',
   },
   input: {
     height: 60,
@@ -141,11 +141,11 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    marginBottom: 32,
+    marginBottom: 12,
   },
   logo: {
-    width: width * 0.4,
-    height: width * 0.4,
+    width: width * 0.7,
+    height: width * 0.7,
   },
   formContainer: {
     paddingHorizontal: 20,
